@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+   <node pkg="grass" type="coordinate" name="coordinate" output="screen"/>
+   <node pkg="rosbag" type="play" name="rosbag_play" output="screen" required="true"
+         args="--loop /home/pushpanshu/catkin_ws/src/grass/bags/image.bag"/>               
+</launch>
